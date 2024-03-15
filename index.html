@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- link to fontawesome-->
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="header">
+   
+    <div class="container">
+
+        <nav>
+            <img src="photos/logo2.png" class="logo">
+            <ul id="sidemenu"> 
+                <li><a href= "#header">Home</a></li>
+                <li><a href= "#about">About</a></li>
+                <li><a href= "#services">Services</a></li>
+                <li><a href= "#portfolio">Portfolio</a></li>
+                <li><a href= "#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-tex">
+            <p>BSc (Hons) in Software Engineering Undergraduate </p>
+            <h1> Hi, I'm <br> <span> Sethma Gunathilake </span><br> a passionate Content Creator </h1>
+        </div>
+    </div>
+    
+ </div>   
+ <!--  ___ABOUT___ -->       
+ <div id="about">
+    <div class="container ">
+        <div class ="row">
+            <div class="about-col-1">
+                <img src="photos/my.jpeg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm an Undergraduate student with 
+                    passionate Content creator, UI/UX & Graphic Designer/ Interior Designer/
+                    Web Developer and a You Tuber From Sri Lanka.
+                    <br><br>
+                    Through my journey as a student and a creator, I am constantly evolving and expanding my skill set.
+                    I am committed to staying at
+                    the forefront of industry trends and technologies, always seeking new opportunities for growth and innovation.<br>
+                    I invite you to explore my work and discover the passion and dedication that drive me to
+                    create meaningful experiences in the digital world. Let's connect and collaborate to bring your ideas to life!
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links"onclick="opentab ('education')"> Education </p>    
+                </div>
+                <div class = "tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX </span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br> Web app development </li> 
+                        <li><span>Content Create </span><br>Create Contents for any Social Media plattform </li>
+                    </ul>
+                </div>
+                <div class = "tab-contents" id="education">
+                    <ul>
+                        <li><span>Undergraduate </span><br> Bachelor of Science(Hons) in 
+                            software engineering degree programme at Saegis campus, Nugegoda (2022-2026)</li>
+                        <li><span>Full Stack</span><br>
+                            Following a Full stack developer course conducted by university of Moratuwa <br>
+                            1.Programming in phython(2023)<br>
+                            2.Web Development(2024- present)</li>
+                        <li><span>Advanced Level</span><br>Stream- Physical Science(2021)<br>
+                        <ol>Combined Mathematics C</ol>
+                        <ol>Physics C</ol>
+                        <ol>Chemistry  C</ol> </li>
+                        <li><span>English Course</span><br>Completed a English Grammer, .... Course at British English way <br>
+                        (2022)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- __MY Services__-->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>UI/UX</h2>
+                <p> Design your own interface uniquely </p>
+                <a href ="#"> Learn more</a>
+            </div>
+            <div>
+                <h2>Web development </h2>
+                <p> Customize as your requirements</p>
+                <a href ="#"> Learn more</a>
+            </div>
+            <div>
+                <h2>Content Creating </h2>
+                <p> Create Contents for any Social Media plattform</p>
+                <a href ="#"> Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- My work - portfolio-->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="photos/pic3.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>rgnfreg ehbbgt gm fk k</p>
+                    <a href = "#"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/pic2.jpg">
+                <!-- width
+                height="70" --> 
+                <div class="layer"> 
+                    <h3>Online shopping App</h3>
+                    <p>rgnfreg ehbbgt gm fk k</p>
+                    <a href = "#"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/flower.jpeg">
+                <!-- width
+                height="70" --> 
+                <div class="layer"> 
+                    <h3>Flower shop app</h3>
+                    <p>create a website to purchase flowers online</p>
+                    <a href = "#"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more </a>
+     </div>
+ </div>
+<!-- Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>sethma07@gmail.com</p> <!-- with icon-->
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>0741508688</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="photos/mycv.pdf" download class=" btn btn2 ">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="You Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type= "submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright made with Easy Tutorial</p>
+    </div>
+</div>
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script> /*small scree(mobile)*/
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function openmenu(){
+        sidemenu.style.right ="200px";
+    }
+ </script>
+</body>
+</html>
